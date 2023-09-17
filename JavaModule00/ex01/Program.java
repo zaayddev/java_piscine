@@ -25,8 +25,10 @@ public class Program {
         if (number <= 1)
             return false;
 
-        else if (number == 2 || number == 3)
+        else if (number == 2 || number == 3) {
+            iterartionCount++;
             return true;
+        }
     
         for (int i = 2; i <= Math.sqrt(number); i++) {
             iterartionCount++;
@@ -39,7 +41,7 @@ public class Program {
     public static void main (String... args) {
         Scanner myObj = new Scanner(System.in);
         int number = myObj.nextInt();
-        if (number <= 0) {
+        if (number <= 1) {
             System.err.println("IllegalArgument");
             System.exit(-1);
         } else {

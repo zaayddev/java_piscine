@@ -4,6 +4,7 @@
 * initializating the number variable.
 */
 
+// Must re-build this exercise
 public class Program {
     /**
     * @param  number    the number to be processed

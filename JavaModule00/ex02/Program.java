@@ -51,7 +51,7 @@ class Program {
                 if (isPrime(sumOfDigits(input)))
                     count++;
                 if (input == 42) {
-                    System.out.println("Count of coffee-request: " + count);
+                    System.out.println("Count of coffee-request : " + count);
                     break;
                 }
             } else {
