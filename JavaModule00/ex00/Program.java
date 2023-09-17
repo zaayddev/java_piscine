@@ -4,19 +4,13 @@
 * initializating the number variable.
 */
 
-// Must re-build this exercise
 public class Program {
     /**
     * @param  number    the number to be processed
     * @return           the sum of digits of the number
     */
     static int sumOfDigits (int number) {
-        int sum = 0;
-        while (number > 0) {
-            sum += number % 10;
-            number /= 10;
-        }
-        return sum;
+        return ((number % 1000000) / 100000) + ((number % 100000) / 10000) + ((number % 10000) / 1000) + ((number % 1000) / 100) + ((number % 100) /10) + (number % 10);
     }
     public  static void main(String... args) {
         int number = 479598;
